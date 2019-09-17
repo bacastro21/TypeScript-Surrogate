@@ -1,5 +1,5 @@
-import {Rol} from "./Rol";
-import {Client} from "./Client";
+import { Client } from "./Client";
+import { Rol } from "./Rol";
 
 export class Users {
     private _id: number;

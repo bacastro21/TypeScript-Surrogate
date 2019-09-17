@@ -1,5 +1,5 @@
-import {Competition} from "./Competition";
-import {InstructorLinking} from "./InstructorLinking";
+import { Competition } from "./Competition";
+import { InstructorLinking } from "./InstructorLinking";
 
 export class AvailabilityCompetition {
     private _id: number;

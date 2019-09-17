@@ -1,5 +1,5 @@
-import {CurrentQuarter} from "./CurrentQuarter";
-import {InstructorLinking} from "./InstructorLinking";
+import { CurrentQuarter } from "./CurrentQuarter";
+import { InstructorLinking } from "./InstructorLinking";
 
 export class Year {
     private _id: number;

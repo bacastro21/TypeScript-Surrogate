@@ -1,7 +1,7 @@
-import { Schedule } from "./Schedule";
 import { Client } from "./Client";
 import { InstructorArea } from "./InstructorArea";
 import { InstructorLinking } from "./InstructorLinking";
+import { Schedule } from "./Schedule";
 export class Instructor {
     private _id: number;
     private _state: string;

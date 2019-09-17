@@ -1,5 +1,5 @@
-import {InstructorLinking} from "./InstructorLinking";
-import {WorkingDayInstructor} from "./WorkingDayInstructor";
+import { InstructorLinking } from "./InstructorLinking";
+import { WorkingDayInstructor } from "./WorkingDayInstructor";
 
 export class ScheduleAvailability {
     private _id: number;

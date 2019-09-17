@@ -1,5 +1,5 @@
-import {Year} from "./Year";
-import {ScheduleVersion} from "./ScheduleVersion";
+import { ScheduleVersion } from "./ScheduleVersion";
+import { Year } from "./Year";
 
 export class CurrentQuarter {
     private _id: number;

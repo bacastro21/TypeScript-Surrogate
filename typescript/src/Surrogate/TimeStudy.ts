@@ -1,5 +1,5 @@
-import {Day} from "./Day";
-import {WorkingDayInstructor} from "./WorkingDayInstructor";
+import { Day } from "./Day";
+import { WorkingDayInstructor } from "./WorkingDayInstructor";
 
 export class TimeStudy {
     private _id: number;

@@ -1,5 +1,5 @@
-import {Area} from "./Area";
-import {Instructor} from "./Instructor";
+import { Area } from "./Area";
+import { Instructor } from "./Instructor";
 
 export class InstructorArea {
     private _id: number;

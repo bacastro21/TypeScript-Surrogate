@@ -1,8 +1,8 @@
-import {Year} from "./Year";
-import {Link} from "./Link";
-import {Instructor} from "./Instructor";
-import {ScheduleAvailability} from "./ScheduleAvailability";
-import {AvailabilityCompetition} from "./AvailabilityCompetition";
+import { AvailabilityCompetition } from "./AvailabilityCompetition";
+import { Instructor } from "./Instructor";
+import { Link } from "./Link";
+import { ScheduleAvailability } from "./ScheduleAvailability";
+import { Year } from "./Year";
 
 export class InstructorLinking {
     private _id: number;

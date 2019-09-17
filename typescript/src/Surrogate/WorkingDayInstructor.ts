@@ -1,5 +1,5 @@
-import {ScheduleAvailability} from "./ScheduleAvailability";
-import {TimeStudy} from "./TimeStudy";
+import { ScheduleAvailability } from "./ScheduleAvailability";
+import { TimeStudy } from "./TimeStudy";
 
 export class WorkingDayInstructor {
     private _id : number;

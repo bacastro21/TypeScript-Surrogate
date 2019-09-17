@@ -1,5 +1,5 @@
-import {Program} from "./Program";
-import {LearningResult} from "./LearningResult";
+import { LearningResult } from "./LearningResult";
+import { Program } from "./Program";
 
 export class Competition {
     private _id: number;

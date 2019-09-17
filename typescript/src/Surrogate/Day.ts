@@ -1,5 +1,5 @@
-import {Schedule} from "./Schedule";
-import {TimeStudy} from "./TimeStudy";
+import { Schedule } from "./Schedule";
+import { TimeStudy } from "./TimeStudy";
 
 export class Day {
     private _id: number;
