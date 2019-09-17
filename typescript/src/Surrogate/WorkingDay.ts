@@ -10,5 +10,68 @@ export class WorkingDay{
     private _state:string;
     private _trimesterList:Array<Trimester>;
     private _courseList:Array<Course>;
-    
+
+    get id(): number {
+        return this._id;
+    }
+
+    set id(value: number) {
+        this._id = value;
+    }
+
+    get initialWorkingDay(): string {
+        return this._initialWorkingDay;
+    }
+
+    set initialWorkingDay(value: string) {
+        this._initialWorkingDay = value;
+    }
+
+    get nameWorkingDay(): string {
+        return this._nameWorkingDay;
+    }
+
+    set nameWorkingDay(value: string) {
+        this._nameWorkingDay = value;
+    }
+
+    get description(): string {
+        return this._description;
+    }
+
+    set description(value: string) {
+        this._description = value;
+    }
+
+    get imagenUrl(): string {
+        return this._imagenUrl;
+    }
+
+    set imagenUrl(value: string) {
+        this._imagenUrl = value;
+    }
+
+    get state(): string {
+        return this._state;
+    }
+
+    set state(value: string) {
+        this._state = value;
+    }
+
+    get trimesterList(): Array<Trimester> {
+        return this._trimesterList;
+    }
+
+    set trimesterList(value: Array<Trimester>) {
+        this._trimesterList = value;
+    }
+
+    get courseList(): Array<Course> {
+        return this._courseList;
+    }
+
+    set courseList(value: Array<Course>) {
+        this._courseList = value;
+    }
 }
