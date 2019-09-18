@@ -1,11 +1,12 @@
 import { Phase } from "./Phase";
 import { Program } from "./Program";
+import {TimeStudy} from "./TimeStudy";
 
-export class Proyect{
+export class Proyect {
     private _id: number;
-    private _code:string;
-    private _state:string;
-    private _phaseList: Array<Phase>;
+    private _code: string;
+    private _state: string;
+    private _phaseList: Phase[];
     private _idProgram: Program;
 
     get id(): number {
@@ -32,11 +33,11 @@ export class Proyect{
         this._state = value;
     }
 
-    get phaseList(): Array<Phase> {
+    get phaseList(): Phase[] {
         return this._phaseList;
     }
 
-    set phaseList(value: Array<Phase>) {
+    set phaseList(value: Phase[]) {
         this._phaseList = value;
     }
 

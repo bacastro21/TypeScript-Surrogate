@@ -1,12 +1,13 @@
 import {CurrentQuarter} from "./CurrentQuarter";
 import {Schedule} from "./Schedule";
+import {TimeStudy} from "./TimeStudy";
 
 export class ScheduleVersion {
     private _id: number;
     private _numberVersion: string;
     private _state: string;
     private _idCurrentQuarter: CurrentQuarter;
-    private _scheduleList: Array<Schedule>;
+    private _scheduleList: Schedule[];
 
 
     get id(): number {
@@ -41,11 +42,11 @@ export class ScheduleVersion {
         this._idCurrentQuarter = value;
     }
 
-    get scheduleList(): Array<Schedule> {
+    get scheduleList(): Schedule[] {
         return this._scheduleList;
     }
 
-    set scheduleList(value: Array<Schedule>) {
+    set scheduleList(value: Schedule[]) {
         this._scheduleList = value;
     }
 }

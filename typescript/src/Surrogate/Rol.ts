@@ -1,8 +1,8 @@
 import {Users} from "./Users";
 
-export class Rol{
-    private _name:string;
-    private _usersList: Array<Users>;
+export class Rol {
+    private _name: string;
+    private _usersList: Users[];
 
     get name(): string {
         return this._name;
@@ -12,11 +12,11 @@ export class Rol{
         this._name = value;
     }
 
-    get usersList(): Array<Users> {
+    get usersList(): Users[] {
         return this._usersList;
     }
 
-    set usersList(value: Array<Users>) {
+    set usersList(value: Users[]) {
         this._usersList = value;
     }
 }

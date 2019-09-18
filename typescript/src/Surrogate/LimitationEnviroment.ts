@@ -1,10 +1,11 @@
 import { Ambient } from "./Ambient";
 import { LearningResult } from "./LearningResult";
+import {TimeStudy} from "./TimeStudy";
 
 export class LimitationEnviroment {
     private _id: number;
-    private _learningResultList: Array<LearningResult>;
-    private _ambientList: Array<Ambient>;
+    private _learningResultList: LearningResult[];
+    private _ambientList: Ambient[];
 
     get id(): number {
         return this._id;
@@ -14,19 +15,19 @@ export class LimitationEnviroment {
         this._id = value;
     }
 
-    get learningResultList(): Array<LearningResult> {
+    get learningResultList(): LearningResult[] {
         return this._learningResultList;
     }
 
-    set learningResultList(value: Array<LearningResult>) {
+    set learningResultList(value: LearningResult[]) {
         this._learningResultList = value;
     }
 
-    get ambientList(): Array<Ambient> {
+    get ambientList(): Ambient[] {
         return this._ambientList;
     }
 
-    set ambientList(value: Array<Ambient>) {
+    set ambientList(value: Ambient[]) {
         this._ambientList = value;
     }
 }

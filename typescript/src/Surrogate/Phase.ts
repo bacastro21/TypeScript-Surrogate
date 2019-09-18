@@ -1,12 +1,13 @@
 import { Proyect } from "./Proyect";
 import { ProyectActivity } from "./ProyectActivity";
+import {TimeStudy} from "./TimeStudy";
 
-export class Phase{
+export class Phase {
     private _id: number;
-    private _name:string;
-    private _state:string;
-    private _idPoyect:Proyect;
-    private _proyectActivityList: Array<ProyectActivity>;
+    private _name: string;
+    private _state: string;
+    private _idPoyect: Proyect;
+    private _proyectActivityList: ProyectActivity[];
 
     get id(): number {
         return this._id;
@@ -40,11 +41,11 @@ export class Phase{
         this._idPoyect = value;
     }
 
-    get proyectActivityList(): Array<ProyectActivity> {
+    get proyectActivityList(): ProyectActivity[] {
         return this._proyectActivityList;
     }
 
-    set proyectActivityList(value: Array<ProyectActivity>) {
+    set proyectActivityList(value: ProyectActivity[]) {
         this._proyectActivityList = value;
     }
 }

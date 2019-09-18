@@ -5,8 +5,8 @@ export class Day {
     private _id: number;
     private _nameDay: string;
     private _state: string;
-    private _scheduleList: Array<Schedule>;
-    private _timeStudyList: Array<TimeStudy>;
+    private _scheduleList: Schedule[];
+    private _timeStudyList: TimeStudy[];
 
     get id(): number {
         return this._id;
@@ -32,19 +32,19 @@ export class Day {
         this._state = value;
     }
 
-    get scheduleList(): Array<Schedule> {
+    get scheduleList(): Schedule[] {
         return this._scheduleList;
     }
 
-    set scheduleList(value: Array<Schedule>) {
+    set scheduleList(value: Schedule[]) {
         this._scheduleList = value;
     }
 
-    get timeStudyList(): Array<TimeStudy> {
+    get timeStudyList(): TimeStudy[] {
         return this._timeStudyList;
     }
 
-    set timeStudyList(value: Array<TimeStudy>) {
+    set timeStudyList(value: TimeStudy[]) {
         this._timeStudyList = value;
     }
 }

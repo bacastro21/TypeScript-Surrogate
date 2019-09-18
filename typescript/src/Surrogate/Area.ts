@@ -1,10 +1,11 @@
 import {InstructorArea} from "./InstructorArea";
+import {Schedule} from "./Schedule";
 
 export class Area {
     private _id: number;
     private _nameArea: string;
     private _state: string;
-    private _instructorAreaList: Array<InstructorArea>;
+    private _instructorAreaList: InstructorArea[];
 
     get id(): number {
         return this._id;
@@ -30,11 +31,11 @@ export class Area {
         this._state = value;
     }
 
-    get instructorArea(): Array<InstructorArea> {
+    get instructorArea(): InstructorArea[] {
         return this._instructorAreaList;
     }
 
-    set instructorArea(value: Array<InstructorArea>) {
+    set instructorArea(value: InstructorArea[]) {
         this._instructorAreaList = value;
     }
 }

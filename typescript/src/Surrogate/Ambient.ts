@@ -1,7 +1,7 @@
-import { LimitationEnviroment } from "./LimitationEnviroment";
-import { Schedule } from "./Schedule";
-import { Sede } from "./Sede";
-import { TypeEnviroment } from "./TypeEnviroment";
+import {LimitationEnviroment} from "./LimitationEnviroment";
+import {Schedule} from "./Schedule";
+import {Sede} from "./Sede";
+import {TypeEnviroment} from "./TypeEnviroment";
 
 export class Ambient {
     private _id: number;
@@ -11,8 +11,8 @@ export class Ambient {
     private _limitation: string;
     private _idTypeEnviroment: TypeEnviroment;
     private _idSede: Sede;
-    private _limitationEnviromentList: Array<LimitationEnviroment>;
-    private _scheduleList: Array<Schedule>;
+    private _limitationEnviromentList: LimitationEnviroment[];
+    private _scheduleList: Schedule[];
 
     get id(): number {
         return this._id;
@@ -70,19 +70,19 @@ export class Ambient {
         this._idSede = value;
     }
 
-    get limitationEnviromentList(): Array<LimitationEnviroment> {
+    get limitationEnviromentList(): LimitationEnviroment[] {
         return this._limitationEnviromentList;
     }
 
-    set limitationEnviromentList(value: Array<LimitationEnviroment>) {
+    set limitationEnviromentList(value: LimitationEnviroment[] ) {
         this._limitationEnviromentList = value;
     }
 
-    get scheduleList(): Array<Schedule> {
+    get scheduleList(): Schedule[] {
         return this._scheduleList;
     }
 
-    set scheduleList(value: Array<Schedule>) {
+    set scheduleList(value: Schedule[]) {
         this._scheduleList = value;
     }
 }

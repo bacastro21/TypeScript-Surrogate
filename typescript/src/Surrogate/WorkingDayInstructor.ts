@@ -2,11 +2,11 @@ import { ScheduleAvailability } from "./ScheduleAvailability";
 import { TimeStudy } from "./TimeStudy";
 
 export class WorkingDayInstructor {
-    private _id : number;
+    private _id: number;
     private _nameDay: string;
     private _description: string;
-    private _scheduleAvailabilityList: Array<ScheduleAvailability>;
-    private _timeStudyList: Array<TimeStudy>;
+    private _scheduleAvailabilityList: ScheduleAvailability[];
+    private _timeStudyList: TimeStudy[];
 
     get id(): number {
         return this._id;
@@ -32,19 +32,19 @@ export class WorkingDayInstructor {
         this._description = value;
     }
 
-    get scheduleAvailabilityList(): Array<ScheduleAvailability> {
+    get scheduleAvailabilityList(): ScheduleAvailability[] {
         return this._scheduleAvailabilityList;
     }
 
-    set scheduleAvailabilityList(value: Array<ScheduleAvailability>) {
+    set scheduleAvailabilityList(value: ScheduleAvailability[]) {
         this._scheduleAvailabilityList = value;
     }
 
-    get timeStudyList(): Array<TimeStudy> {
+    get timeStudyList(): TimeStudy[] {
         return this._timeStudyList;
     }
 
-    set timeStudyList(value: Array<TimeStudy>) {
+    set timeStudyList(value: TimeStudy[]) {
         this._timeStudyList = value;
     }
 }

@@ -1,11 +1,12 @@
 import {InstructorLinking} from "./InstructorLinking";
+import {TimeStudy} from "./TimeStudy";
 
 export class Link {
     private _id: number;
     private _linkType: string;
     private _hours: number;
     private _state: string;
-    private _instructorLinkingList: Array<InstructorLinking>;
+    private _instructorLinkingList: InstructorLinking[];
 
     get id(): number {
         return this._id;
@@ -39,11 +40,11 @@ export class Link {
         this._state = value;
     }
 
-    get instructorLinkingList(): Array<InstructorLinking> {
+    get instructorLinkingList(): InstructorLinking[] {
         return this._instructorLinkingList;
     }
 
-    set instructorLinkingList(value: Array<InstructorLinking>) {
+    set instructorLinkingList(value: InstructorLinking[]) {
         this._instructorLinkingList = value;
     }
 }

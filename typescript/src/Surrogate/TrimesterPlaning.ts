@@ -3,12 +3,12 @@ import { Planing } from "./Planing";
 import { PlaninigActivity } from "./PlaningActivity";
 import { Trimester } from "./Trimester";
 
-export class TrimesterPlaning{
-    private _id:number;
+export class TrimesterPlaning {
+    private _id: number;
     private _idLearningResult: LearningResult;
     private _idTrimester: Trimester;
     private _idPlaning: Planing;
-    private _planingActivityList:Array<PlaninigActivity>;
+    private _planingActivityList: PlaninigActivity[];
 
 
     get id(): number {
@@ -43,11 +43,11 @@ export class TrimesterPlaning{
         this._idPlaning = value;
     }
 
-    get planingActivityList(): Array<PlaninigActivity> {
+    get planingActivityList(): PlaninigActivity[] {
         return this._planingActivityList;
     }
 
-    set planingActivityList(value: Array<PlaninigActivity>) {
+    set planingActivityList(value: PlaninigActivity[]) {
         this._planingActivityList = value;
     }
 }

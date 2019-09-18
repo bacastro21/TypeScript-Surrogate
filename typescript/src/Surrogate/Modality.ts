@@ -1,11 +1,12 @@
 import { Schedule } from "./Schedule";
+import {TimeStudy} from "./TimeStudy";
 
 export class Modality {
     private _id: number;
     private _modalityName: string;
     private _color: string;
     private _state: string;
-    private _scheduleList: Array<Schedule>;
+    private _scheduleList: Schedule[];
 
     get id(): number {
         return this._id;
@@ -39,11 +40,11 @@ export class Modality {
         this._state = value;
     }
 
-    get scheduleList(): Array<Schedule> {
+    get scheduleList(): Schedule[] {
         return this._scheduleList;
     }
 
-    set scheduleList(value: Array<Schedule>) {
+    set scheduleList(value: Schedule[]) {
         this._scheduleList = value;
     }
 }

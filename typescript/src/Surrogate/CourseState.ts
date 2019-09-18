@@ -1,10 +1,11 @@
 import { Course } from "./Course";
+import {LearningResult} from "./LearningResult";
 
 export class CourseState {
     private _id: number;
     private _nameState: string;
     private _state: string;
-    private _courseList: Array<Course>;
+    private _courseList: Course[];
 
     get id(): number {
         return this._id;
@@ -30,11 +31,11 @@ export class CourseState {
         this._state = value;
     }
 
-    get courseList(): Array<Course> {
+    get courseList(): Course[] {
         return this._courseList;
     }
 
-    set courseList(value: Array<Course>) {
+    set courseList(value: Course[]) {
         this._courseList = value;
     }
 }

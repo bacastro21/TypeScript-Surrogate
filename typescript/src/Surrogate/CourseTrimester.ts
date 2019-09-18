@@ -7,8 +7,8 @@ export class CourseTrimester {
     private _id: number;
     private _idCourse: Course;
     private _idTrimester: Trimester;
-    private _resultSeenList: Array<ResultSeen>;
-    private _scheduleList:Array<Schedule>;
+    private _resultSeenList: ResultSeen[];
+    private _scheduleList: Schedule[];
 
     get id(): number {
         return this._id;
@@ -34,19 +34,19 @@ export class CourseTrimester {
         this._idTrimester = value;
     }
 
-    get resultSeenList(): Array<ResultSeen> {
+    get resultSeenList(): ResultSeen[] {
         return this._resultSeenList;
     }
 
-    set resultSeenList(value: Array<ResultSeen>) {
+    set resultSeenList(value: ResultSeen[]) {
         this._resultSeenList = value;
     }
 
-    get scheduleList(): Array<Schedule> {
+    get scheduleList(): Schedule[] {
         return this._scheduleList;
     }
 
-    set scheduleList(value: Array<Schedule>) {
+    set scheduleList(value: Schedule[]) {
         this._scheduleList = value;
     }
 }

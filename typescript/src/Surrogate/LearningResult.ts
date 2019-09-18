@@ -7,10 +7,10 @@ export class LearningResult {
     private _id: number;
     private _resultCode: string;
     private _denomination: string;
-    private _limitationEnviromentList: Array<LimitationEnviroment>;
+    private _limitationEnviromentList: LimitationEnviroment[];
     private _idCompetition: Competition;
-    private _trimesterPlaningList: Array<TrimesterPlaning>;
-    private _resultSeenList: Array<ResultSeen>;
+    private _trimesterPlaningList: TrimesterPlaning[];
+    private _resultSeenList: ResultSeen[];
 
     get id(): number {
         return this._id;
@@ -36,11 +36,11 @@ export class LearningResult {
         this._denomination = value;
     }
 
-    get limitationEnviromentList(): Array<LimitationEnviroment> {
+    get limitationEnviromentList(): LimitationEnviroment[] {
         return this._limitationEnviromentList;
     }
 
-    set limitationEnviromentList(value: Array<LimitationEnviroment>) {
+    set limitationEnviromentList(value: LimitationEnviroment[]) {
         this._limitationEnviromentList = value;
     }
 
@@ -52,19 +52,19 @@ export class LearningResult {
         this._idCompetition = value;
     }
 
-    get trimesterPlaningList(): Array<TrimesterPlaning> {
+    get trimesterPlaningList(): TrimesterPlaning[] {
         return this._trimesterPlaningList;
     }
 
-    set trimesterPlaningList(value: Array<TrimesterPlaning>) {
+    set trimesterPlaningList(value: TrimesterPlaning[]) {
         this._trimesterPlaningList = value;
     }
 
-    get resultSeenList(): Array<ResultSeen> {
+    get resultSeenList(): ResultSeen[] {
         return this._resultSeenList;
     }
 
-    set resultSeenList(value: Array<ResultSeen>) {
+    set resultSeenList(value: ResultSeen[]) {
         this._resultSeenList = value;
     }
 }

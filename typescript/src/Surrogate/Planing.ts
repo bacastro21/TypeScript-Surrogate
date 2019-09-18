@@ -1,11 +1,11 @@
 import { TrimesterPlaning } from "./TrimesterPlaning";
 
-export class Planing{
-    private _id:number;
-    private _code:string;
-    private _date:any;
-    private _state:string;
-    private _trimesterPlaningList:Array<TrimesterPlaning>;
+export class Planing {
+    private _id: number;
+    private _code: string;
+    private _date: any;
+    private _state: string;
+    private _trimesterPlaningList: TrimesterPlaning[];
 
     get id(): number {
         return this._id;
@@ -39,11 +39,11 @@ export class Planing{
         this._state = value;
     }
 
-    get trimesterPlaningList(): Array<TrimesterPlaning> {
+    get trimesterPlaningList(): TrimesterPlaning[] {
         return this._trimesterPlaningList;
     }
 
-    set trimesterPlaningList(value: Array<TrimesterPlaning>) {
+    set trimesterPlaningList(value: TrimesterPlaning[]) {
         this._trimesterPlaningList = value;
     }
 }

@@ -1,13 +1,14 @@
 import { Phase } from "./Phase";
 import { PlaninigActivity } from "./PlaningActivity";
+import {TimeStudy} from "./TimeStudy";
 
-export class ProyectActivity{
-    private _id:number;
+export class ProyectActivity {
+    private _id: number;
     private _numberActivity: string;
     private _descriptionActivity: string;
-    private _state:string;
-    private _idPhase:Phase;
-    private _planingActivityList: Array<PlaninigActivity>;
+    private _state: string;
+    private _idPhase: Phase;
+    private _planingActivityList: PlaninigActivity[];
 
     get id(): number {
         return this._id;
@@ -49,11 +50,11 @@ export class ProyectActivity{
         this._idPhase = value;
     }
 
-    get planingActivityList(): Array<PlaninigActivity> {
+    get planingActivityList(): PlaninigActivity[] {
         return this._planingActivityList;
     }
 
-    set planingActivityList(value: Array<PlaninigActivity>) {
+    set planingActivityList(value: PlaninigActivity[]) {
         this._planingActivityList = value;
     }
 }

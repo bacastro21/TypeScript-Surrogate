@@ -12,7 +12,7 @@ export class Course {
     private _idCourseState: CourseState;
     private _idProgram: Program;
     private _idWorkingDay: WorkingDay;
-    private _courseTrimesterList: Array<CourseTrimester>;
+    private _courseTrimesterList: CourseTrimester[];
 
     get id(): number {
         return this._id;
@@ -78,11 +78,11 @@ export class Course {
         this._idWorkingDay = value;
     }
 
-    get courseTrimesterList(): Array<CourseTrimester> {
+    get courseTrimesterList(): CourseTrimester[] {
         return this._courseTrimesterList;
     }
 
-    set courseTrimesterList(value: Array<CourseTrimester>) {
+    set courseTrimesterList(value: CourseTrimester[]) {
         this._courseTrimesterList = value;
     }
 }

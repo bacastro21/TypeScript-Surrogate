@@ -2,18 +2,19 @@ import { Competition } from "./Competition";
 import { Course } from "./Course";
 import { FormationLevel } from "./FormationLevel";
 import { Proyect } from "./Proyect";
+import {TimeStudy} from "./TimeStudy";
 
 export class Program {
     private _id: number;
-    private _code:string;
+    private _code: string;
     private _version: string;
     private _name: string;
-    private _acronym:string;
+    private _acronym: string;
     private _state: string;
-    private _competitionList:Array<Competition>;
+    private _competitionList: Competition[];
     private _idFormationLevel: FormationLevel;
     private _courseList: Course;
-    private _proyectList: Array<Proyect>;
+    private _proyectList: Proyect[];
 
     get id(): number {
         return this._id;
@@ -63,11 +64,11 @@ export class Program {
         this._state = value;
     }
 
-    get competitionList(): Array<Competition> {
+    get competitionList(): Competition[] {
         return this._competitionList;
     }
 
-    set competitionList(value: Array<Competition>) {
+    set competitionList(value: Competition[]) {
         this._competitionList = value;
     }
 
@@ -87,11 +88,11 @@ export class Program {
         this._courseList = value;
     }
 
-    get proyectList(): Array<Proyect> {
+    get proyectList(): Proyect[] {
         return this._proyectList;
     }
 
-    set proyectList(value: Array<Proyect>) {
+    set proyectList(value: Proyect[]) {
         this._proyectList = value;
     }
 }

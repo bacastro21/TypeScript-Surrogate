@@ -9,8 +9,8 @@ export class Trimester {
     private _state: string;
     private _idWorkingDay: WorkingDay;
     private _idFormationLevel: FormationLevel;
-    private _courseTrimesterList: Array<CourseTrimester>;
-    private _trimesterPlaningList: Array<TrimesterPlaning>;
+    private _courseTrimesterList: CourseTrimester[];
+    private _trimesterPlaningList: TrimesterPlaning[];
 
     get id(): number {
         return this._id;
@@ -52,19 +52,19 @@ export class Trimester {
         this._idFormationLevel = value;
     }
 
-    get courseTrimesterList(): Array<CourseTrimester> {
+    get courseTrimesterList(): CourseTrimester[] {
         return this._courseTrimesterList;
     }
 
-    set courseTrimesterList(value: Array<CourseTrimester>) {
+    set courseTrimesterList(value: CourseTrimester[]) {
         this._courseTrimesterList = value;
     }
 
-    get trimesterPlaningList(): Array<TrimesterPlaning> {
+    get trimesterPlaningList(): TrimesterPlaning[] {
         return this._trimesterPlaningList;
     }
 
-    set trimesterPlaningList(value: Array<TrimesterPlaning>) {
+    set trimesterPlaningList(value: TrimesterPlaning[]) {
         this._trimesterPlaningList = value;
     }
 }

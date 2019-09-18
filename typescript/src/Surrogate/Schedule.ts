@@ -14,7 +14,7 @@ export class Schedule {
     private _idCourseTrimester: CourseTrimester;
     private _idInstructor: Instructor;
     private _idModality: Modality;
-    private _idCurrentQuarter: CurrentQuarter
+    private _idCurrentQuarter: CurrentQuarter;
 
     get id(): number {
         return this._id;

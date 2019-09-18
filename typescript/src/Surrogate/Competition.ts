@@ -1,12 +1,13 @@
 import { LearningResult } from "./LearningResult";
 import { Program } from "./Program";
+import {Schedule} from "./Schedule";
 
 export class Competition {
     private _id: number;
     private _competitionCode: string;
     private _denomination: string;
     private _idProgram: Program;
-    private _learningResultList: Array<LearningResult>;
+    private _learningResultList: LearningResult[];
 
 
     get id(): number {
@@ -41,11 +42,11 @@ export class Competition {
         this._idProgram = value;
     }
 
-    get learningResultList(): Array<LearningResult> {
+    get learningResultList(): LearningResult[] {
         return this._learningResultList;
     }
 
-    set learningResultList(value: Array<LearningResult>) {
+    set learningResultList(value: LearningResult[]) {
         this._learningResultList = value;
     }
 }

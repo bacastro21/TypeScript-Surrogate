@@ -1,11 +1,12 @@
 import {Ambient} from "./Ambient";
+import {TimeStudy} from "./TimeStudy";
 
 export class Sede {
     private _id: number;
     private _nameSede: string;
     private _description: string;
     private _state: string;
-    private _ambientList: Array<Ambient>;
+    private _ambientList: Ambient[];
 
 
     get id(): number {
@@ -40,11 +41,11 @@ export class Sede {
         this._state = value;
     }
 
-    get ambientList(): Array<Ambient> {
+    get ambientList(): Ambient[] {
         return this._ambientList;
     }
 
-    set ambientList(value: Array<Ambient>) {
+    set ambientList(value: Ambient[]) {
         this._ambientList = value;
     }
 }

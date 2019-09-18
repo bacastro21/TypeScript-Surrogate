@@ -11,8 +11,8 @@ export class InstructorLinking {
     private _idYear: Year;
     private _idLimk: Link;
     private _idInstructor: Instructor;
-    private _scheduleAvailabilityList: Array<ScheduleAvailability>;
-    private _availabilityCompetitionList: Array<AvailabilityCompetition>;
+    private _scheduleAvailabilityList: ScheduleAvailability[];
+    private _availabilityCompetitionList: AvailabilityCompetition[];
 
 
     get id(): number {
@@ -63,19 +63,19 @@ export class InstructorLinking {
         this._idInstructor = value;
     }
 
-    get scheduleAvailabilityList(): Array<ScheduleAvailability> {
+    get scheduleAvailabilityList(): ScheduleAvailability[] {
         return this._scheduleAvailabilityList;
     }
 
-    set scheduleAvailabilityList(value: Array<ScheduleAvailability>) {
+    set scheduleAvailabilityList(value: ScheduleAvailability[]) {
         this._scheduleAvailabilityList = value;
     }
 
-    get availabilityCompetitionList(): Array<AvailabilityCompetition> {
+    get availabilityCompetitionList(): AvailabilityCompetition[] {
         return this._availabilityCompetitionList;
     }
 
-    set availabilityCompetitionList(value: Array<AvailabilityCompetition>) {
+    set availabilityCompetitionList(value: AvailabilityCompetition[]) {
         this._availabilityCompetitionList = value;
     }
 }

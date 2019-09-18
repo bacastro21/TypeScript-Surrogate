@@ -8,7 +8,7 @@ export class CurrentQuarter {
     private _endDate: any;
     private _state: string;
     private _idYear: Year;
-    private _scheduleVersionList: Array<ScheduleVersion>;
+    private _scheduleVersionList: ScheduleVersion[];
 
     get id(): number {
         return this._id;
@@ -58,11 +58,11 @@ export class CurrentQuarter {
         this._idYear = value;
     }
 
-    get scheduleVersionList(): Array<ScheduleVersion> {
+    get scheduleVersionList(): ScheduleVersion[] {
         return this._scheduleVersionList;
     }
 
-    set scheduleVersionList(value: Array<ScheduleVersion>) {
+    set scheduleVersionList(value: ScheduleVersion[]) {
         this._scheduleVersionList = value;
     }
 }
